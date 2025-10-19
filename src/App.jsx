@@ -52,7 +52,7 @@ export default function App() {
   return (
     <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', backgroundColor: 'black'}} className="min-h-screen">
       <header style={{width: '95%', display: 'flex', alignItems: 'center', justifyContent: 'center',flexWrap: 'wrap'}} className="bg-white shadow">
-        <img style={{height: '15rem'}} src="./src/assets/OnCloudMediaLogo.png" alt="OnCloud.Media" />
+        <img style={{height: '15rem'}} src="https://oncloudportfolio.s3.ap-south-1.amazonaws.com/OnCloudMediaLogo.png" alt="OnCloud.Media" />
         <div style={{flexDirection: 'column', margin: '5% 5%'}} className="max-w-5xl mx-auto px-6 py-8 flex items-center justify-between">
           <h1 style={{fontSize: '2em'}} className="text-2xl font-bold bbh-sans-bartle-regular">Creative Portfolio</h1>
           <h3 className="playwrite-de-sas" >You'll soon find us while scrolling</h3>
