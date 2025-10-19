@@ -54,7 +54,7 @@ export default function App() {
       <header style={{width: '95%', display: 'flex', alignItems: 'center', justifyContent: 'center',flexWrap: 'wrap'}} className="bg-white shadow">
         <img style={{height: '15rem'}} src="https://oncloudportfolio.s3.ap-south-1.amazonaws.com/OnCloudMediaLogo.png" alt="OnCloud.Media" />
         <div style={{flexDirection: 'column', margin: '5% 5%'}} className="max-w-5xl mx-auto px-6 py-8 flex items-center justify-between">
-          <h1 style={{fontSize: '2em'}} className="text-2xl font-bold bbh-sans-bartle-regular">Creative Portfolio</h1>
+          <h1 style={{fontSize: '1.5rem'}} className="text-2xl font-bold bbh-sans-bartle-regular">Creative Portfolio</h1>
           <h3 className="playwrite-de-sas" >You'll soon find us while scrolling</h3>
         </div>
         {/* <img style={{height: '10rem'}} src="./src/assets/ContactUsBtn.png" alt="ContactUs" /> */}
@@ -63,7 +63,7 @@ export default function App() {
       <main style={{width: '100%'}} className="max-w-5xl mx-auto px-6 py-12 space-y-16">
         {/* Section 1 */}
         <section id="basic">
-          <h2 style={{textAlign: 'center'}} className="text-2xl font-semibold mb-6 bbh-sans-bartle-regular">Professional Reels</h2>
+          <h2 style={{textAlign: 'center', fontSize: '1rem'}} className="text-2xl font-semibold mb-6 bbh-sans-bartle-regular">Professional Reels</h2>
           <div style={{display: 'flex', justifyContent: 'space-around', alignItems: 'center', flexWrap: 'wrap'}}>
             {basicReels.map(r => <ReelCard key={r.id} reel={r} />)}
           </div>
@@ -71,7 +71,7 @@ export default function App() {
 
         {/* Section 2 */}
         <section id="campaigns">
-          <h2 style={{textAlign: 'center', marginTop: '4%'}} className="text-2xl font-semibold mb-6 bbh-sans-bartle-regular">Engagement Reels</h2>
+          <h2 style={{textAlign: 'center', marginTop: '4%', fontSize: '1rem'}} className="text-2xl font-semibold mb-6 bbh-sans-bartle-regular">Engagement Reels</h2>
           <div style={{display: 'flex', justifyContent: 'space-around', alignItems: 'center', flexWrap: 'wrap'}}>
             {campaignReels.map(r => <ReelCard key={r.id} reel={r} />)}
           </div>
@@ -81,7 +81,7 @@ export default function App() {
       <div style={{width: '95%', backgroundColor: '#343434', display:'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2%'}} >
         <div style={{marginBottom: '1%'}} >Contact Us</div>
         <div>E-mail : vireshmitra@zohomail.in</div>
-        <div>Mobile : +91-9696774888 | +91-9235836244</div>
+        <div>Mobile : +91-9696774888 | +91-7755870969</div>
       </div>
 
       <footer style={{padding: '1%'}} className="py-8 text-center text-sm text-gray-500">
