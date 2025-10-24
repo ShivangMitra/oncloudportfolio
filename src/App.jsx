@@ -2,6 +2,30 @@ import React from "react";
 import ReelCard from "./components/ReelCard";
 
 export default function App() {
+  const premiumReels = [
+    {
+      id: "prem1",
+      title: "Sample 1",
+      src: "https://oncloudportfolio.s3.ap-south-1.amazonaws.com/Video-539.mp4",
+      // poster: "/reels/thumb1.jpg", // optional
+    },
+    {
+      id: "prem2",
+      title: "Sample 2",
+      src: "https://oncloudportfolio.s3.ap-south-1.amazonaws.com/Video-627.mp4",
+    },
+    {
+      id: "prem3",
+      title: "Sample 3",
+      src: "https://oncloudportfolio.s3.ap-south-1.amazonaws.com/Video-727.mp4",
+    },
+    {
+      id: "prem4",
+      title: "Sample 4",
+      src: "https://oncloudportfolio.s3.ap-south-1.amazonaws.com/Video-846.mp4",
+    },
+  ];
+
   const basicReels = [
     {
       id: "basic1",
@@ -63,13 +87,21 @@ export default function App() {
       <main style={{width: '100%'}} className="max-w-5xl mx-auto px-6 py-12 space-y-16">
         {/* Section 1 */}
         <section id="basic">
-          <h2 style={{textAlign: 'center', fontSize: '1rem'}} className="text-2xl font-semibold mb-6 bbh-sans-bartle-regular">Professional Reels</h2>
+          <h2 style={{textAlign: 'center', fontSize: '1rem'}} className="text-2xl font-semibold mb-6 bbh-sans-bartle-regular">Premium Reels</h2>
+          <div style={{display: 'flex', justifyContent: 'space-around', alignItems: 'center', flexWrap: 'wrap'}}>
+            {premiumReels.map(r => <ReelCard key={r.id} reel={r} />)}
+          </div>
+        </section>
+
+        {/* Section 2 */}
+        <section id="basic">
+          <h2 style={{textAlign: 'center', marginTop: '4%', fontSize: '1rem'}} className="text-2xl font-semibold mb-6 bbh-sans-bartle-regular">Professional Reels</h2>
           <div style={{display: 'flex', justifyContent: 'space-around', alignItems: 'center', flexWrap: 'wrap'}}>
             {basicReels.map(r => <ReelCard key={r.id} reel={r} />)}
           </div>
         </section>
 
-        {/* Section 2 */}
+        {/* Section 3 */}
         <section id="campaigns">
           <h2 style={{textAlign: 'center', marginTop: '4%', fontSize: '1rem'}} className="text-2xl font-semibold mb-6 bbh-sans-bartle-regular">Engagement Reels</h2>
           <div style={{display: 'flex', justifyContent: 'space-around', alignItems: 'center', flexWrap: 'wrap'}}>
